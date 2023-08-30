@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:full_name",
+ "creation": "2023-08-10 12:14:08.352637",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "add_photo",
+  "student_id",
+  "full_name",
+  "column_break_vtikr",
+  "date_of_birth",
+  "gender",
+  "admission_date",
+  "section_break_f9fwp",
+  "contact_number",
+  "contact_address",
+  "change_contact_number",
+  "change_address",
+  "column_break_5qwft",
+  "class_name",
+  "class_teacher",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Id",
+   "options": "Student Registration",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "student_id.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "student_id.contact_number",
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student_id.date_of_birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Data",
+   "label": "Date Of Birth"
+  },
+  {
+   "fetch_from": "student_id.admission_date",
+   "fieldname": "admission_date",
+   "fieldtype": "Data",
+   "label": "Admission Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vtikr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_f9fwp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "student_id.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "change_contact_number",
+   "fieldtype": "Int",
+   "label": "Change Contact Number"
+  },
+  {
+   "fieldname": "change_address",
+   "fieldtype": "Data",
+   "label": "Change Address"
+  },
+  {
+   "fieldname": "add_photo",
+   "fieldtype": "Attach Image",
+   "label": "Add Photo"
+  },
+  {
+   "fieldname": "column_break_5qwft",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "label": "Class Name"
+  },
+  {
+   "fieldname": "class_teacher",
+   "fieldtype": "Data",
+   "label": "Class Teacher"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student_id.contact_address",
+   "fieldname": "contact_address",
+   "fieldtype": "Data",
+   "label": "Contact Address",
+   "read_only": 1
+  }
+ ],
+ "image_field": "add_photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-28 11:09:37.477334",
+ "modified_by": "Administrator",
+ "module": "School Management App",
+ "name": "Student",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Class Teacher",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

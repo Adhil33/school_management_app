@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CL.##",
+ "creation": "2023-08-10 15:13:19.053556",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student_id",
+  "class_name",
+  "class_teacher_name",
+  "max_capacity",
+  "column_break_4svdm",
+  "subjects_offered",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Select",
+   "label": "Class Name",
+   "options": "\n+1 Science\n+1 Humanities\n+1 Commerce",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_teacher_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class Teacher Name",
+   "read_only": 1
+  },
+  {
+   "default": "35",
+   "fieldname": "max_capacity",
+   "fieldtype": "Int",
+   "label": "Max Capacity"
+  },
+  {
+   "fieldname": "subjects_offered",
+   "fieldtype": "Long Text",
+   "label": "Subjects Offered"
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student id",
+   "options": "Student Registration"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Class",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4svdm",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-23 15:09:15.310479",
+ "modified_by": "Administrator",
+ "module": "School Management App",
+ "name": "Class",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Class Teacher",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

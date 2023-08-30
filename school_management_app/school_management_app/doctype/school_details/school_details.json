@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:school_name",
+ "creation": "2023-08-10 11:25:45.467240",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "school_name",
+  "school_address",
+  "contact_number",
+  "column_break_oju0i",
+  "principals_name",
+  "established_year"
+ ],
+ "fields": [
+  {
+   "description": "USE CAPITAL LETTERS",
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Name of School",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "school_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "School Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Contact Number ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "principals_name",
+   "fieldtype": "Data",
+   "label": "Principal's Name"
+  },
+  {
+   "fieldname": "established_year",
+   "fieldtype": "Int",
+   "label": "Established Year"
+  },
+  {
+   "fieldname": "column_break_oju0i",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-10 15:24:48.421063",
+ "modified_by": "Administrator",
+ "module": "School Management App",
+ "name": "School Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

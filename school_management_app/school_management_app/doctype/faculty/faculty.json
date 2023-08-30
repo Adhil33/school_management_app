@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FAC.###",
+ "creation": "2023-08-11 15:14:07.204922",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name1",
+  "date_of_birth",
+  "age",
+  "gender",
+  "class_allocated",
+  "column_break_urvbt",
+  "qualification",
+  "subject_taught",
+  "experience",
+  "contact_number",
+  "address",
+  "email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qualification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject_taught",
+   "fieldtype": "Data",
+   "label": "Subject Taught"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "column_break_urvbt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Faculty",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "class_allocated",
+   "fieldtype": "Select",
+   "label": "Class Allocated",
+   "options": "+1 Science\n+1 Humanities\n+1 Commerce"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-28 17:40:56.479262",
+ "modified_by": "Administrator",
+ "module": "School Management App",
+ "name": "Faculty",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
